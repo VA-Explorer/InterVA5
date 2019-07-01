@@ -12,7 +12,6 @@ source("R/InterVA5.clean.R")
 #* @param sci A data frame that contains the symptom-cause-information (aka Probbase) that InterVA uses to assign a cause of death.
 #* @param returnCheckedData A logical indicating if the checked data (i.e., the data that have been modified by the consistency checks) should be returned.
 #* @post /interva5
-# When using this to drive a RESTful interface we don't want the default action to be to write to a file
 InterVA5 <- function (Input, HIV, Malaria, write = FALSE, directory = NULL, filename = "VA5_result", 
                       output = "classic", append = FALSE, groupcode = FALSE, sci = NULL,
                       returnCheckedData = FALSE, ...) 
